@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: int_okta_events
+    description: Silver model with parsed threat event data.
+
+    columns:
+      - name: EVENT_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: USER_ID
+        tests:
+          - not_null
+
+      - name: EVENT_TYPE
+        tests:
+          - not_null
+
+      - name: RISK_SCORE

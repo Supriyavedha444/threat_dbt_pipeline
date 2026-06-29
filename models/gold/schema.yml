@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_okta_events
+    description: Final curated threat events.
+
+    columns:
+      - name: EVENT_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: EVENT_TYPE
+        tests:
+          - not_null
+
+      - name: RISK_LEVEL
+        tests:
+          - not_null

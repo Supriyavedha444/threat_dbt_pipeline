@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_okta_events
+    description: Bronze staging model.
+
+    columns:
+      - name: EVENT_DATA
+        tests:
+          - not_null

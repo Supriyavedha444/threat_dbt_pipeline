@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: THREAT_DB
+    schema: RAW
+
+    tables:
+      - name: OKTA_EVENTS
